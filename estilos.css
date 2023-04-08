@@ -1,0 +1,131 @@
+*{
+    margin:1;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background:linear-gradient(#5656fd,#9ec8ff);
+}
+
+textarea{
+    border: none;
+    font-size: 15px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    width: 100%;
+    background-color: #a1d1f5;
+    color: #64696d;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    border:  1px solid #a1d1f5;
+}
+
+input{
+    border: none;
+    font-size: 15px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    width: 100%;
+    background-color: #a1d1f5;
+    color: #64696d;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    border:  1px solid #a1d1f5;
+}
+
+.botton1{
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 3px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    width:80px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    border:  1px solid #64696d00;
+}
+
+.botton1:hover {
+    background-color: #42d0ff;
+    color: rgb(255, 255, 255);
+    border:  1px solid #008CBA;
+}
+
+.verde {
+    background-color: #4CAF50; 
+    /*border: 1px solid #4CAF50;*/
+} 
+
+.verde:hover{
+    background-color: #7af57e;
+    color: rgb(255, 255, 255);
+    /*border:  1px solid #4CAF50;*/
+}
+
+
+.rojo {background-color: #f44336;} /* Red */ 
+
+
+.rojo:hover{
+    background-color: #ffa19a;
+    color: rgb(255, 255, 255);
+}
+
+.delite{
+    background-image: url(deliteIcon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f44336;
+    background-size: cover;
+    width:20px;
+    height: 20px;
+}
+
+
+.delite:hover{
+    background-color: #ffa19a;
+    color: rgb(255, 255, 255);
+}
+
+
+.gris {background-color: #e7e7e7; color: black;} /* Gray */ 
+.negro {background-color: #555555;} /* Black */
+
+/*select*/
+
+.seleccion{
+    max-width: 178px;
+    position: relative;
+    
+}
+
+.seleccion select{
+    display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	height: 25px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background-color: #a1d1f5;
+    color: #64696d;
+	font-size: 1em;
+	font-family: 
+	'Quicksand', sans-serif;
+    border:2px solid rgba(83, 175, 250, 0.2);
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.seleccion select:hover{
+	background: #bbe0fc;
+}
