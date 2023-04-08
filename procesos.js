@@ -60,8 +60,7 @@ function capturarTodo() {
     "Cedula: " +cc +"\n" +
     "Equipo entrante: " +entra +"\n" +
     "Equipo saliente: " +sale +"\n" +
-    "Observaciones: " + observaciones + "\n" +
-    "Login: Walvizva";
+    "Observaciones: " + observaciones + "\n";
   copyToClipBoard("plantilla");
 }
 
