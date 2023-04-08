@@ -106,8 +106,7 @@ function capturarTodoM6(){
     "ID Gis: " +gis +"\n" +
     "Cedula: " +cc +"\n" +
     "Equipo entrante: " +entra +"\n" +
-    "Equipo saliente: " +sale +"\n" +
-    "Login: Walvizva";
+    "Equipo saliente: " +sale +"\n";
     copyToClipBoard("plantilla");
 
 }
