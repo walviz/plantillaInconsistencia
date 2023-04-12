@@ -53,6 +53,7 @@ input:focus {
 
 .botton1{
     background-color: #008CBA; /* Blue */
+    height: 25px;
     border: none;
     color: white;
     padding: 3px 0px;
@@ -74,7 +75,7 @@ input:focus {
 .botton1:hover {
     background-color: #42d0ff;
     color: rgb(255, 255, 255);
-    border:  1px solid #008CBA;
+    border:  2px solid #008CBA;
 }
 .botton1:active{
     background-color: #cef3ff;
@@ -84,13 +85,14 @@ input:focus {
 
 .verde {
     background-color: #4CAF50; 
-    /*border: 1px solid #4CAF50;*/
+    color: rgb(255, 255, 255);
+    border: 1px solid #4CAF50;
 } 
 
 .verde:hover{
-    background-color: #7af57e;
+    background-color: #79d67c;
     color: rgb(255, 255, 255);
-    /*border:  1px solid #4CAF50;*/
+    border:  2px solid #c5f7c6;
 }
 
 .verde:active{
@@ -107,13 +109,15 @@ input:focus {
 
 
 .rojo:hover{
-    background-color: #ffa19a;
+    background-color: #ff8d85;
     color: rgb(255, 255, 255);
+    border:  2px solid #ffffff;
 }
 
 .rojo:active{
-    background-color: #ffcdc9;
+    background-color: #ffd2cf;
     color: rgb(255, 255, 255);
+    border:  1px solid #008CBA;
 }
 
 
@@ -136,15 +140,16 @@ input:focus {
     /* z-index: 1; */
     /* overflow: hidden; */
     /* display: inline-block; */
-    border:  1px solid #c51919;
+    
     font-weight: 900;
     
 }
 
 
 .delite:hover{
-    background-color: #ffa19a;
+    background-color: #ff8d85;
     color: rgb(255, 255, 255);
+    border:  2px solid #ffffff;
 }
 
 .delite:active{
