@@ -15,19 +15,17 @@
             <td><button onclick="captura('red');" class="botton1" value="RED" >RED</button></td>
             <td><button onclick="captura('m6');"  value="M6" class="botton1">M6</button></td>
             <td><button onclick="captura('wts');"  value="WTS" class="botton1">WTS</button></td>
-            <td><button onclick="captura('consulta_equipo');"  value="SN/MAC" class="botton1">SN/MAC</button></td>
-            
-            
+            <td><button onclick="captura('consulta_equipo');"  value="SN/MAC" class="botton1">SN/MAC</button></td> 
         </tr>
         <tr>
-            <td><input type="submit" onclick="captura('sincronizacion');" class="botton1 verde" value="SINCR" ></td>
-            <td><input type="submit" onclick="captura('instalacion');" class="botton1  verde" value="INST" ></td>
-            <td><input type="submit" onclick="captura('cambio');" class="botton1 verde" value="CAMBIO" ></td>
-            <td><input type="submit" onclick="captura('reuso');" class="botton1 verde" value="REUSO" ></td>
+            <td><button onclick="captura('sincronizacion');" class="botton1 verde">SINCR</button></td>
+            <td><button onclick="captura('instalacion');" class="botton1  verde">INST</button></td>
+            <td><button onclick="captura('cambio');" class="botton1 verde">CAMBIO</button></td>
+            <td><button onclick="captura('reuso');" class="botton1 verde" >REUSO</button></td>
         </tr>
         <tr>
-            <td><input type="submit" onclick="captura('une');" class="botton1 verde" value="UNE" ></td>
-            <td><input type="submit" onclick="captura('000');" class="botton1  verde" value="0000" ></td>
+            <td><button onclick="captura('une');" class="botton1 verde" >UNE</button></td>
+            <td><button onclick="captura('000');" class="botton1  verde" >0000</button></td>
             <td><button onclick="fecha();" class="botton1 verde">FECHA</button></td>
         </tr>
     
@@ -103,7 +101,6 @@
         <textarea name="plantilla" rows="10" cols="50" id="plantilla" readonly></textarea><br>
         <textarea name="nota" rows="18" cols="50" id="nota"placeholder="Notas adicionales"></textarea><br>
 
-        <script src="procesos.js"></script>
         
         <input id="wts" type="hidden" value="Bigotes2023--++">
         <input id="m6" type="hidden" value="Montoca2021/*-++">
@@ -116,6 +113,6 @@
         <input id="000" type="hidden" value="000000000000000\0000">
         <input id="consulta_equipo" type="hidden" value="http://10.100.66.199:8082/RepEquiposDireccion.aspx">
 
-         
+        <script src="procesos.js"></script>
 </body>
 </html>
