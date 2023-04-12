@@ -30,34 +30,31 @@
             <td><input type="submit" onclick="captura('000');" class="botton1  verde" value="0000" ></td>
             <td><button onclick="fecha();" class="botton1 verde">FECHA</button></td>
         </tr>
-       
+    
     </table>
-        
+    <div>
          <table>
             <tr >
-                <td><button onclick="copyToClipBoard('Caso')" class="botton1">Caso</button></td><td><input type="text" id="Caso"  onkeyup="mayus(this);" placeholder="Numero de caso"></td><td><button onclick="deliteTextbox('Caso')" class="botton1 delite">Borrar</button></td>
+                <td><button onclick="copyToClipBoard('Caso')" class="botton1">Caso</button></td><td><input type="text" id="Caso"  onkeyup="mayus(this);" placeholder="Numero de caso"></td><td><button onclick="deliteTextbox('Caso')" class="botton1 delite">X</button></td>
             </tr>
             <tr>
-                <td><button onclick="copyToClipBoard('IdLlamada')" class="botton1">ID llamada </button></td><td><input type="text" id="IdLlamada" placeholder="ID de llamada"></td><td><button onclick="deliteTextbox('IdLlamada')" class="botton1 delite">Borrar</button></td>
+                <td><button onclick="copyToClipBoard('IdLlamada')" class="botton1">ID llamada </button></td><td><input type="text" id="IdLlamada" placeholder="ID de llamada"></td><td><button onclick="deliteTextbox('IdLlamada')" class="botton1 delite">X</button></td>
             </tr>
             <tr>
-                <td><button onclick="copyToClipBoard('Legado')"class="botton1">ID servicio</button></td><td><input type="text" id="Legado" onkeyup="mayus(this);" placeholder="ID servicio o legado"></td><td><button onclick="deliteTextbox('Legado')" class="botton1 delite">Borrar</button></td>
+                <td><button onclick="copyToClipBoard('Legado')"class="botton1">ID servicio</button></td><td><input type="text" id="Legado" onkeyup="mayus(this);" placeholder="ID servicio o legado"></td><td><button onclick="deliteTextbox('Legado')" class="botton1 delite">X</button></td>
             </tr>
             <tr>
-                <td><button onclick="copyToClipBoard('Gis')"class="botton1">Gis</button></td><td><input type="text" id="Gis"placeholder="Cuenta domiciliaria (GIS)"></td><td><button onclick="deliteTextbox('Gis')" class="botton1 delite">Borrar</button></td>
+                <td><button onclick="copyToClipBoard('Gis')"class="botton1">Gis</button></td><td><input type="text" id="Gis"placeholder="Cuenta domiciliaria (GIS)"></td><td><button onclick="deliteTextbox('Gis')" class="botton1 delite">X</button></td>
             </tr>
             <tr>
-                <td><button onclick="copyToClipBoard('CC')"class="botton1">CC</button></td><td><input type="text" id="CC"placeholder="Numero de Cedula"></td><td><button onclick="deliteTextbox('CC')" class="botton1 delite">Borrar</button></td>
+                <td><button onclick="copyToClipBoard('CC')"class="botton1">CC</button></td><td><input type="text" id="CC"placeholder="Numero de Cedula"></td><td><button onclick="deliteTextbox('CC')" class="botton1 delite">X</button></td>
             </tr>
             <tr>
-                <td><button onclick="copyToClipBoard('Entra')"class="botton1">Entra</button></td><td><input type="text" id="Entra" onkeyup="mayus(this);"placeholder="Equipo entrante"></td><td><button onclick="deliteTextbox('Entra')" class="botton1 delite">Borrar</button></td>
+                <td><button onclick="copyToClipBoard('Entra')"class="botton1">Entra</button></td><td><input type="text" id="Entra" onkeyup="mayus(this);"placeholder="Equipo entrante"></td><td><button onclick="deliteTextbox('Entra')" class="botton1 delite">X</button></td>
             </tr>
             <tr>
-                <td><button onclick="copyToClipBoard('Sale')"class="botton1">Sale</button></td><td><input type="text" id="Sale" onkeyup="mayus(this);"placeholder="Equipo saliente"></td><td><button onclick="deliteTextbox('Sale')" class="botton1 delite">Borrar</button></td>
+                <td><button onclick="copyToClipBoard('Sale')"class="botton1">Sale</button></td><td><input type="text" id="Sale" onkeyup="mayus(this);"placeholder="Equipo saliente"></td><td><button onclick="deliteTextbox('Sale')" class="botton1 delite">X</button></td>
             </tr>
-
-            
-
 
             <tr>
                 <td><button onclick="copyToClipBoard('observaciones')" class="botton1">Obser</button></td><td><div class="seleccion"><select name="guiones" id="guiones" onchange="enviarPlantilla()">
@@ -93,7 +90,7 @@
                 <i></i></div></td>
             </tr>
         </table>
-       
+    </div>
         <textarea name="observaciones" rows="10" cols="50" id="observaciones" ></textarea><br>
         <table>
             <tr>
