@@ -1,15 +1,14 @@
 // eliminar espacios y :
-
 limpiarEntrada(Legado);
 limpiarEntrada(Gis);
 limpiarEntrada(CC);
 limpiarEntrada(Entra);
 limpiarEntrada(Sale);
-
 function limpiarEntrada(input) {
-  input.addEventListener("keyup", e => {
+  input.addEventListener("input", e => {
     let string = e.target.value;
-    e.target.value = string.split(/[ :]/g).join("");
+    string = string.replace(/[ :]/g, "");
+    e.target.value = string;
   });
 }
 
@@ -103,6 +102,7 @@ function captura(parametro) {
 }
 
 //convertir numero del mes en mes texto
+
 function converMonth(mes){
   mes++;
   const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -147,9 +147,11 @@ function selecion(){
       break;   
     case "1":
       document.getElementById("observaciones").value = "Buen día, No se actualiza equipo porque no nos suministra cual es el equipo que sale en reemplazo del que entra, ya que cliente cuenta en oss con la misma cantidad de equipos  que la contratada ";
+      copyToClipBoard("observaciones");
       break;
     case "2":
       document.getElementById("observaciones").value ="Buen día compa, la MAC O serial o NSCID: " +entra +" que nos suministras NO trae información al respecto en inventario";
+      copyToClipBoard("observaciones");
       break;
     case "3":
       document.getElementById("observaciones").value ="Buen día, no se corrige ya que equipo que nos indicas aparecen asignado a otro id servicio xxx  que actualmente no ha sido retirado, se debe legalizar equipos con técnico en terreno.";
@@ -159,18 +161,22 @@ function selecion(){
         break;
     case "5":
       document.getElementById("observaciones").value ="Buen día. en nuestra base de datos no registra el ID " +legado +" que nos indicas, se debe validar la información para la corrección del servicio.";
+      copyToClipBoard("observaciones");
         break;
     case "6":
       document.getElementById("observaciones").value = "Buen día, no se corrige ya que pedido cuenta con ordenes abiertas en GTC,MSS y no es posible realizar modificaciones hasta que estas estén cerradas, Se debe hacer SS PUMED y esperar el cierre de este.";
         break;
     case "7":
       document.getElementById("observaciones").value ="Buen día, Desde nuestro grupo no se actualizan equipos de ELITE por lo tanto lo debes escalar por CONSULTA LIDERES";
+      copyToClipBoard("observaciones");
         break;
     case "8":
       document.getElementById("observaciones").value ="Buen día, Desde nuestro grupo no se actualizan equipos de Tecnología REDCO/GPON y servicios C3 PYMES  de ANTIOQUIA  asi sea HFC que carguen por nacional, porque el inventario y la infraestructura sigue estando montada en Fénix ATC, por lo tanto lo debes escalar por CONSULTA LIDERES.";
+      copyToClipBoard("observaciones");
         break;
     case "9":
       document.getElementById("observaciones").value ="Buen día, compa no nos indicas cuan es el ID del servicio al cual hay que generar la corrección";
+      copyToClipBoard("observaciones");
         break;
     case "10":
       document.getElementById("observaciones").value ="Buen día, servicio aparece con los equipos que nos indicas Prueba Integrada xxx , para crear o activar cuentas en verimatrix es con consulta lideres o rescate virtual";
@@ -183,9 +189,11 @@ function selecion(){
         break;
     case "13":
       document.getElementById("observaciones").value ="Buen día, Servicio se encuentra con estado inactivo, servicio retirado";
+      copyToClipBoard("observaciones");
         break;
     case "14":
       document.getElementById("observaciones").value ="Buen día, para temas de reaprovisionamiento, registro o permisos de líneas telefónicas debe ser escalado con el área de consulta lideres";
+      copyToClipBoard("observaciones");
         break;
     case "15":
       document.getElementById("observaciones").value = "Buen día, compa el nscid xxxx que nos indicas nos registra con un serial totalmente diferente al que nos indicas, se debe validar correctamente la información del equipo o legalizarlo con técnico en terreno";
@@ -195,15 +203,19 @@ function selecion(){
       break;
     case "17":
       document.getElementById("observaciones").value = "Buen día, no se puede ingresar equipo ya que los Lite Zapper no se puede ingresar en una oferta NOV Android Trio, se debe enviar con premisas para cambio de equipo ";
+      copyToClipBoard("observaciones");
       break;
     case "18":
-      document.getElementById("observaciones").value = "Buenas noches, se devuelve caso ya que el equipo: " +sale +" que notifican retirar no esta en oss, por favor validar cuales son los equipos que salen";
+      document.getElementById("observaciones").value = "Buen dia, se devuelve caso ya que el equipo: " +sale +" que notifican retirar no esta en oss, por favor validar cuales son los equipos que salen";
+      copyToClipBoard("observaciones");
       break;
     case "19":
       document.getElementById("observaciones").value = "Buen día, no se puede asociar ya que servicio se encuentra bajo una promoción asociada diferente, se debe validar con servicio al cliente para en caso que aplique, realizar el correcto empaquetamiento del servicio. ";
+      copyToClipBoard("observaciones");
       break;
     case "20":
       document.getElementById("observaciones").value ="Buen dia, compa no nos llenaste la plantilla completamente, falta el id de la llamada para realizar cualquier modificación desde nuestra área, se debe montar nuevamente y con los datos solicitados en la plantilla.";
+      copyToClipBoard("observaciones");
       break;
     case "21":
       document.getElementById("observaciones").value = "Buen dia, compa no se puede asociar la telefonía al CM que nos indicas ya que este pertenece al id servicio xxx y al ser empresa, se manejan infraestructuras diferentes, si hay que asociar la to, se debe validar con premisas y verificar dicho equipo. ";
@@ -216,12 +228,14 @@ function selecion(){
       break;
     case "24":
       document.getElementById("observaciones").value = "Buen dia, desde nuestra area no se realizan reconexiones de servicio, se debe validar con servicio al cliente.";
+      copyToClipBoard("observaciones");
       break;
     case "25":
       document.getElementById("observaciones").value = "Buen día, servicio aparece con los equipos que nos indicas en OSS Prueba Integrada  xxx, no hay inconsistencia. se debe validar con rescate virtual o lideres si pueden cargar paquete de canales ya que cuenta con pedidos en proceso ";
       break;
     case "26":
       document.getElementById("observaciones").value ="Buen día, equipo " +entra +" que nos indicas ya aparece en el oss del usuario, no hay inconsistencia, prueba integrada ";
+      copyToClipBoard("observaciones");
         break;
     case "s":
       document.getElementById("observaciones").value ="";
