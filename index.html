@@ -31,6 +31,7 @@
     
     </table>
     <div>
+        
          <table>
             <tr >
                 <td><button onclick="copyToClipBoard('Caso')" class="botton1">Caso</button></td><td><input type="text" id="Caso"  onkeyup="mayus(this);" placeholder="Numero de caso"></td><td><button onclick="deliteTextbox('Caso')" class="botton1 delite">X</button></td>
@@ -53,9 +54,9 @@
             <tr>
                 <td><button onclick="copyToClipBoard('Sale')"class="botton1">Sale</button></td><td><input type="text" id="Sale" onkeyup="mayus(this);"placeholder="Equipo saliente"></td><td><button onclick="deliteTextbox('Sale')" class="botton1 delite">X</button></td>
             </tr>
-
+       
             <tr>
-                <td><button onclick="copyToClipBoard('observaciones')" class="botton1">Obser</button></td><td><div class="seleccion"><select name="guiones" id="guiones" onchange="enviarPlantilla()">
+                <td><button onclick="copyToClipBoard('observaciones')" class="botton1">Obser</button></td><td><div class="seleccion"><select name="guiones" id="guiones" onchange="selecion()">
                     <option value="s">--Seleccionar--</option>
                     <option value= 0>Ingreso de equipo</option>
                     <option value="1">Cantidad de equipos</option>
