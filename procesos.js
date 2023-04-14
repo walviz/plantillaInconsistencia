@@ -54,6 +54,8 @@ function copyToClipBoard(parametro) {
 //borra un solo texto
 function deliteTextbox(param){
   document.getElementById(param).value = "";
+  var input = document.getElementById(param);
+  input.focus();
 }
 
 //borra todo
@@ -104,7 +106,6 @@ function captura(parametro) {
 //convertir numero del mes en mes texto
 
 function converMonth(mes){
-  mes++;
   const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
   return meses[mes];
 }
@@ -235,7 +236,6 @@ function selecion(){
       break;
     case "26":
       document.getElementById("observaciones").value ="Buen día, equipo " +entra +" que nos indicas ya aparece en el oss del usuario, no hay inconsistencia, prueba integrada ";
-      copyToClipBoard("observaciones");
         break;
     case "s":
       document.getElementById("observaciones").value ="";

@@ -22,6 +22,7 @@
             <td><button onclick="captura('instalacion');" class="botton1  verde">INST</button></td>
             <td><button onclick="captura('cambio');" class="botton1 verde">CAMBIO</button></td>
             <td><button onclick="captura('reuso');" class="botton1 verde" >REUSO</button></td>
+            <td><button onclick="captura('retequipo');" class="botton1 verde" >RET-EQ</button></td>
         </tr>
         <tr>
             <td><button onclick="captura('une');" class="botton1 verde" >UNE</button></td>
@@ -103,15 +104,27 @@
         <textarea name="nota" rows="18" cols="50" id="nota"placeholder="Notas adicionales"></textarea><br>
 
         
-        
+        <input id="wts" type="hidden" value="Bigotes2023--++">
+        <input id="m6" type="hidden" value="Montoca2021/*-++">
+        <input id="red" type="hidden" value="Montoca2023--++">
         <input id="sincronizacion" type="hidden" value="SINCRONIZACION">
         <input id="instalacion" type="hidden" value="INST-EQUIPO">
         <input id="cambio" type="hidden" value="CAMBIO-EQUIPO">
         <input id="reuso" type="hidden" value="REUSO-ACCESO">
+        <input id="retequipo" type="hidden" value="RETIRO-EQUIPO">
         <input id="une" type="hidden" value="UNE">
         <input id="000" type="hidden" value="000000000000000\0000">
         <input id="consulta_equipo" type="hidden" value="http://10.100.66.199:8082/RepEquiposDireccion.aspx">
 
         <script src="procesos.js"></script>
+
+        <div class="sidebar">
+            <ul>
+              <li><a href="#">Mondificar Contraseñas</a></li>
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          
 </body>
 </html>
