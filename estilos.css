@@ -76,7 +76,10 @@ input:focus {
     background-color: #42d0ff;
     color: rgb(255, 255, 255);
     border:  2px solid #76cbe7;
+    
 }
+
+
 .botton1:active{
     background-color: #cef3ff;
     color: rgb(255, 255, 255);
@@ -287,3 +290,22 @@ input:focus {
   .sidebar li a:hover {
     background-color: #eaeaea;
   }
+
+  /*ventana emergente*/
+  #popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #9ec8ff;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    z-index: 9999;
+  }
+  /*
+  input[type="password"] {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+  }*/
