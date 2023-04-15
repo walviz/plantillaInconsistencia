@@ -1,3 +1,4 @@
+
 // eliminar espacios y :
 limpiarEntrada(Legado);
 limpiarEntrada(Gis);
@@ -43,6 +44,39 @@ function copyToClipBoard(parametro) {
   }
   
 }*/
+////////////pass///////////////////////
+
+//redpass
+function redPass() {
+  navigator.clipboard.writeText(localStorage.getItem("localred")); 
+}
+
+function wtsPass() {
+  navigator.clipboard.writeText(localStorage.getItem("localwts")); 
+}
+
+function m6Pass() {
+  navigator.clipboard.writeText(localStorage.getItem("localm6")); 
+}
+
+function submitPassword() {
+  localStorage.setItem("localred", document.getElementById("passred").value);
+  localStorage.setItem("localwts", document.getElementById("passwts").value);
+  localStorage.setItem("localm6", document.getElementById("passm6").value);
+  hidePopup();
+}
+
+
+function asignarPass() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function hidePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+
+
 
 // con esta funcion el texto queda selecionado
 function copyToClipBoard(parametro) {
@@ -134,6 +168,15 @@ function capturarTodoM6(){
 
 }
 
+function abrirVentana() {
+  var passRed = prompt("Contraseña de Red : ");
+  var passWts = prompt("Contraseña del WTS : ");
+  var passM6 = prompt("Contraseña de M6/MSS: ");
+}
+
+
+
+
 
 //guiones select
 function selecion(){
@@ -141,7 +184,6 @@ function selecion(){
   let entra = document.getElementById("Entra").value;
   let legado = document.getElementById("Legado").value;
   let sale = document.getElementById("Sale").value;
-
   switch(opcion){
     case "0":
       document.getElementById("observaciones").value ="Buen día, se ingresa equipo " + entra + " según lo indicado, prueba integrada: ";
