@@ -47,8 +47,16 @@ function copyToClipBoard(parametro) {
 ////////////pass///////////////////////
 
 //redpass
-function asigPass(parametro) {
-  navigator.clipboard.writeText(localStorage.getItem(parametro)); 
+function redPass() {
+  navigator.clipboard.writeText(localStorage.getItem("localred")); 
+}
+
+function wtsPass() {
+  navigator.clipboard.writeText(localStorage.getItem("localwts")); 
+}
+
+function m6Pass() {
+  navigator.clipboard.writeText(localStorage.getItem("localm6")); 
 }
 
 function submitPassword() {
